@@ -2,9 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Grapple : MonoBehaviour
-{
-    [SerializeField] private Camera mainCam;
+public class Grapple : MonoBehaviour {
+    [SerializeField] GameObject hook;
     private LineRenderer _lineRen;
     private DistanceJoint2D _joint;
     
@@ -18,6 +17,8 @@ public class Grapple : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Mouse0)) {
+            
+        }
     }
 }
